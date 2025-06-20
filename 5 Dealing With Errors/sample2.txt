@@ -1,0 +1,2 @@
+Hello! , This text is written by Python.
+Python is great programming language!.This is a new line.
