@@ -1,5 +1,5 @@
 class Task():
-    def __init__(self, title, description = None, start_date = None, end_date = None, done  = False): #-> None
+    def __init__(self, title:str, description = None, start_date = None, end_date = None, done:bool = False)-> None:
         self.title = title
         self.description = description
         self.start_date = start_date

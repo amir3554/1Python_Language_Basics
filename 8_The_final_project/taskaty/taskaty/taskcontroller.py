@@ -10,13 +10,14 @@ class TaskController():
         self.file_name = file_name
 
     def add_task(self, args):
-        #1 start date   
-        if not args.start_date:
-            now = date.today().isoformat()
-            args.start_date = now
-
-        #task
+        #task initializtion from sys args
         task = Task(args.title, args.description, args.start_date, args.end_date, args.done)
+        
+        #1 start date if it wasn't included   
+        if task.start_date is None:
+            now = date.today().isoformat()
+            task.start_date = now
+        
         #open file and save info 
         with open(self.file_name, 'a') as file:
             file.write(str(task) + '\n')

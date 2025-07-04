@@ -1,5 +1,5 @@
 def greet(name, age, nick_name = '', b_date= "0000/00/00" ):
-    print(f"Welcome {name}, Age:{age} years old, te llaman {nick_name}, Your birth day will be {b_date}")
+    print(f"Welcome {name}, Age:{age} years old, Surname: {nick_name}, Your birth day will be {b_date}")
     
 
 def greet_with_kwargs(**kwargs):
